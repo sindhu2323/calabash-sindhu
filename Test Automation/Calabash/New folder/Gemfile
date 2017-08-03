@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+ 
+gem "capybara"
+gem "cucumber"
+gem "rspec", :require => "spec"
+gem "poltergeist"
+gem "selenium-webdriver"
+gem 'capybara-slow_finder_errors'
+
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
